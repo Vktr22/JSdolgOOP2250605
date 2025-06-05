@@ -1,0 +1,137 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 5%;
+    text-align: center;
+    border-bottom: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #343a40;
+    font-weight: 500;
+}
+
+
+
+#receptek {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#receptek div[adatIndex] {
+    flex: 1fr 1fr 1fr;
+    border: 1px;
+    padding: 10px;;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+#receptek img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+#receptek > div {
+   
+    gap: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    text-align: center;
+  }
+
+#receptek div[adatIndex]:hover {
+    transform: scale(1.02);
+}
+
+#receptek div[adatIndex] img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+
+#receptek div[adatIndex] h5 {
+    font-size: 1.1rem;
+    margin: 2px;
+    font-weight: 500;
+    color: #343a41;
+}
+
+#receptek div[adatIndex] button {
+    margin-top: 5px;
+}
+
+/* Bootstrap stílus a gombhoz – a Recept.js ne változzon */
+
+#receptek div[adatIndex] button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: #212529;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#receptek div[adatIndex] button:hover {
+    background-color: #e0a800;
+}
+
+@media screen and (max-width: 600px) {
+    #receptek {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #receptek div[adatIndex] {
+        /*width: 100%;*/
+        width: 90%;
+    }
+
+    #felulRecept {
+        flex-direction: column;
+    }
+}
+
+#felulRecept {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+
+#felulRecept button {
+    padding: 5px 10px;
+}

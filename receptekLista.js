@@ -1,7 +1,7 @@
 export const receptLista=[
   {
     nev: 'Csirkepaprikás galuskával',
-    kep: 'https://example.com/kepek/csirkepaprikas.jpg',
+    kep: 'kepek/csirkepaprikas.jpg',
     leiras: 'Klasszikus magyar étel szaftos csirkével és friss galuskával.',
     hozzavalok: [
       '4 db csirkecomb',
@@ -17,7 +17,7 @@ export const receptLista=[
   },
   {
     nev: 'Csokis brownie',
-    kep: 'https://example.com/kepek/brownie.jpg',
+    kep: 'kepek/brownie.jpg',
     leiras: 'Gazdag, szaftos csokoládés brownie ropogós kéreggel.',
     hozzavalok: [
       '200 g étcsokoládé',
@@ -32,7 +32,7 @@ export const receptLista=[
   },
   {
     nev: 'Cézár saláta csirkével',
-    kep: 'https://example.com/kepek/cezar_salata.jpg',
+    kep: 'kepek/cezarsali.jpg',
     leiras: 'Friss római saláta, grillezett csirke és házi öntet parmezánnal.',
     hozzavalok: [
       '1 fej római saláta',
